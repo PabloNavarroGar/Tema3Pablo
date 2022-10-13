@@ -37,12 +37,12 @@ public class Ej05 {
 
         if (opcion == 1) {
             System.out.println("Ha seleccionado calcular el área de un cuadrado...");
-
+            //Introduccion de datos 
             System.out.println(" ¿Cuanto mide el lado de tu cuadrado?");
 
             ladoCuadrado = entrada.nextDouble();
-
-            areaCuadrado = Math.sqrt(ladoCuadrado);
+            //Formula y salida de datos
+            areaCuadrado = Math.pow(ladoCuadrado, 2);
 
             String resultadoCuadrado = """
                                       
@@ -55,8 +55,7 @@ public class Ej05 {
             if (opcion == 2) {
                 System.out.println("Ha seleccionado calcular el 	área de un triángulo...");
 
-                System.out.println("Ha seleccionado calcular el área de un Triangulo...");
-
+                //Introduccion de datos
                 System.out.println(" ¿Cuanto mide la base de tu triangulo?");
 
                 BaseTriangulo = entrada.nextDouble();
@@ -64,12 +63,12 @@ public class Ej05 {
                 System.out.println(" ¿Cuanto mide la altura de tu triangulo?");
 
                 alturaTriangulo = entrada.nextInt();
-
+                //Formula y salida 
                 areaTriangulo = BaseTriangulo * alturaTriangulo / 2;
 
                 String resultadoTriangulo = """
                                       
-                                      EL area del triangulo  es de : %.2f 
+                                      El area del triangulo  es de : %.2f 
                                       """.formatted(areaTriangulo);
                 System.out.println(resultadoTriangulo);
 
@@ -78,17 +77,15 @@ public class Ej05 {
                 if (opcion == 3) {
                     System.out.println("Ha seleccionado calcular el área de un círculo...");
 
-                    System.out.println("Ha seleccionado calcular el área de un ciruclo...");
-
                     System.out.println(" ¿Cuanto mide el radio del circulo?");
 
                     radioCirculo = entrada.nextDouble();
 
-                    areaCirculo = Math.PI * Math.sqrt(radioCirculo);
-
+                    areaCirculo = Math.PI * Math.pow(radioCirculo, 2);
+                    //formula y salida de datos
                     String resultadoCirculo = """
                                       
-                                      EL area del triangulo  es de : %.2f 
+                                      EL area del circulo  es de : %.2f 
                                       """.formatted(areaCirculo);
                     System.out.println(resultadoCirculo);
 
