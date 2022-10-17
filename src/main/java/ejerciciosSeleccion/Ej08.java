@@ -23,7 +23,7 @@ public class Ej08 {
                 System.out.println("Desarrollo");
                 break;
             case 'B':
-                System.out.println(" Recursos Humanos");
+                System.out.println("Recursos Humanos");
              
             break;
             case 'C':
@@ -37,8 +37,11 @@ public class Ej08 {
       }
       System.out.println(
         "Código para el departamento es " + departamento);
-      //Es un Switch que dada el char segun la letra que le pondremos, nos monstrara el resultado del nombre de ese departamiento
-      // A=Desarrollo, B=Recursos Humanos, C=Finanzas, D=Mercado y no no podemos nada pues sale no valido
+      //Es un Switch que dada el char segun la letra que le pondremos, nos monstrara 
+      //el resultado del nombre de ese departamiento
+      // siempre para en el break
+      // A=Desarrollo, B=Recursos Humanos, C=Finanzas, D=Mercado 
+      //y no no podemos nada pues sale no valido
    }
 
     }

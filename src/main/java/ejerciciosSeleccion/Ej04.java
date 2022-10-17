@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author samue
  */
-public class EJ04 {
+public class Ej04 {
 
     /**
      * @param args the command line arguments
@@ -35,7 +35,8 @@ public class EJ04 {
                 
          */
         //Pasamos el ejercicio con Operandos ?:
-        // Los operadores ternarios se declara el operador entre parentesis el ? equivale a algo junto a las comillas con 2 pisible resultados
+        // Los operadores ternarios se declara el operador entre parentesis el ?
+        //equivale a algo junto a las comillas con 2 pisible resultados
         String resultado;
         resultado = (edad >= 18) ? " Eres mayor de edad" : " Eres menor de Edad";
 

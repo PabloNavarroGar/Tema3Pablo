@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ApuntesClase;
+package apuntesClase;
 
 import javax.swing.JOptionPane;
 
@@ -73,6 +73,8 @@ public class Calculadora {
     }
     
          */
+        
+        /*
         //else if va despue sde un if, y todo junto, queda mas compactado y no tan separado
         if (opcion.equals("1")) {
             resultado = operando1 + operando2;
@@ -87,6 +89,7 @@ public class Calculadora {
             resultado = operando1 / operando2;
             System.out.printf(" El resultado es %.2f", resultado);
         }
+        */
     }
 
 }

@@ -6,16 +6,15 @@ package ejerciciosSeleccion;
 
 /**
  *
- * @author samue
+ * @author pablo
  */
-public class Ej09 {
+public class Ej10 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
         int variable = 3, variable2;
         switch (variable) {
 
@@ -27,16 +26,22 @@ public class Ej09 {
                 break;
             case 3:
                 variable2 = 30;
+                break;
             case 4:
                 variable2 = 10;
+                break;
             default:
                 variable2 = 100;
                 break;
             
-                //No hay break en el 3 y 4 por lo que al
-                //haber break en el defaul, toma el valor 100
+                //Hay que poner en este ejercico los demas breaks
         }
-
+        
+        
+        
+        
+        
+        
     }
-
+    
 }

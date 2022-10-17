@@ -48,10 +48,18 @@ public class Ej02 {
         resultado = (numero >= 135) ? " Es mayor de 135 " : " Es mayor a 135";
 
         System.out.println(resultado);
-
+        
+        //Apartado B
         resultado2 = (numero <= 0) ? "Menor que cero " : " Mayor que cero";
 
         System.out.println(resultado2);
+        
+        //Apartado C
+        
+        int valorAbsoluto;
+        valorAbsoluto = (numero>= 0) ? numero : -numero;
+        
+        System.out.println(" El valor Absoluto es " +valorAbsoluto);
 
     }
 

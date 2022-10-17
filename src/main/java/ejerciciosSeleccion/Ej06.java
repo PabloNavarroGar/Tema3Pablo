@@ -84,7 +84,7 @@ public class Ej06 {
             //formula y salida de datos
             String resultadoCirculo = """
                                       
-                                      EL area del circulo  es de : %.2f 
+                                      El area del circulo  es de : %.2f 
                                       """.formatted(areaCirculo);
             System.out.println(resultadoCirculo);
 
