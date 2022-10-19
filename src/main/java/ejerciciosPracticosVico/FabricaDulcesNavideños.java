@@ -57,12 +57,15 @@ public class FabricaDulcesNavideños {
             case "1":
                 //Mantecadosde limon---> M1
                 //coste producción = materia prima + mano de obra
-                String costeString = JOptionPane.showInputDialog("Introduce el coste de la materia prima(entre 0.1 y 1)");
-
+                //Panel Introduccion de datos
+                String costeString = JOptionPane.showInputDialog("Introduce el "
+                        + "coste de la materia prima(entre 0.1€ y 1€)");
+                //Parse del string a double
                 costeMateriaPrima = Double.parseDouble(costeString);
-
-                JOptionPane.showMessageDialog(null, "El coste de la materia es de " + costeMateriaPrima);
-
+                //Salida de datos
+                JOptionPane.showMessageDialog(null, "El coste de la"
+                        + " materia es de " + costeMateriaPrima);
+                //Comienzo del if con la condicion 
                 if (costeMateriaPrima >= 0.1 && costeMateriaPrima <= 1) {
 
                     //Calculo coste unidad
@@ -80,12 +83,14 @@ public class FabricaDulcesNavideños {
                                         El beneficio es de: %.2f Centimos
                                      """.formatted(costeProduccionUnidad, precioVenta, beneficio);
                     JOptionPane.showMessageDialog(null, resultado);
-
-                    JOptionPane.showMessageDialog(null, "Se va a calcular cuantos unidades a producir para que haya un beneficio de al menos 2500€");
+                    //Calculo del objetivo de 2500 euros
+                    JOptionPane.showMessageDialog(null, "Se va a calcular "
+                            + "cuantos unidades a producir para que haya un beneficio de al menos 2500€");
                     objetivo = 2500 * 1 / beneficio;
                     //(int para declarar el double en int y el ceil para redondear hacia arriba)
-                    JOptionPane.showMessageDialog(null, " Necesitamos fabricar " + (int) Math.ceil(objetivo) + " Mantecados ");
-                    //Pase
+                    JOptionPane.showMessageDialog(null, " Necesitamos "
+                            + "fabricar " + (int) Math.ceil(objetivo) + " Mantecados ");
+                    //Fin
                 } else {
                     JOptionPane.showMessageDialog(null, " Error, precio no permitido");
 
@@ -97,12 +102,15 @@ public class FabricaDulcesNavideños {
 
                 //Turron Chococate---> T1
                 //coste producción = materia prima + mano de obra
-                String coste2String = JOptionPane.showInputDialog("Introduce el coste de la materia prima(entre 0.1 y 1)");
-
+                //Introduccion de datos
+                String coste2String = JOptionPane.showInputDialog("Introduce "
+                        + "el coste de la materia prima(entre 0.1€ y 1€)");
+                //Parse string a double
                 costeMateriaPrima = Double.parseDouble(coste2String);
-
-                JOptionPane.showMessageDialog(null, "El coste de la materia es de " + costeMateriaPrima);
-
+                //Salida de datos
+                JOptionPane.showMessageDialog(null, "El coste de la"
+                        + " materia es de " + costeMateriaPrima);
+                //Comienzo if con la condicion
                 if (costeMateriaPrima >= 0.1 && costeMateriaPrima <= 1) {
 
                     //Calculo coste unidad
@@ -118,13 +126,20 @@ public class FabricaDulcesNavideños {
                                         Un Turron de chocolate (T1) nos cuesta : %.2f Centimos
                                         El precio de venta es de: %.2f Centimos
                                         El beneficio es de: %.2f Centimos
-                                     """.formatted(costeProduccionUnidad, precioVenta, beneficio);
+                                     """.formatted(costeProduccionUnidad,
+                                             precioVenta, beneficio);
+                    
                     JOptionPane.showMessageDialog(null, resultado);
 
-                    JOptionPane.showMessageDialog(null, "Se va a calcular cuantos unidades a producir para que haya un beneficio de al menos 2500€");
+                    JOptionPane.showMessageDialog(null, "Se va a"
+                            + " calcular cuantos "
+                            + "unidades a producir para que haya un"
+                            + " beneficio de al menos 2500€");
                     objetivo = 2500 * 1 / beneficio;
                     //(int para declarar el double en int y el ceil para redondear hacia arriba)
-                    JOptionPane.showMessageDialog(null, " Necesitamos fabricar " + (int) Math.ceil(objetivo) + " Turrones ");
+                    JOptionPane.showMessageDialog(null, " Necesitamos"
+                            + " fabricar " + 
+                            (int) Math.ceil(objetivo) + " Turrones ");
                     //Pase
                 } else {
                     JOptionPane.showMessageDialog(null, " Error, precio no permitido");
@@ -137,11 +152,14 @@ public class FabricaDulcesNavideños {
 
                 //Polvorones--->M2
                 //coste producción = materia prima + mano de obra
-                String coste3String = JOptionPane.showInputDialog("Introduce el coste de la materia prima(entre 0.1€ y 1€)");
-
+                //Introduccion de datos
+                String coste3String = JOptionPane.showInputDialog("Introduce"
+                        + " el coste de la materia prima(entre 0.1€ y 1€)");
+                //Parse de double string
                 costeMateriaPrima = Double.parseDouble(coste3String);
 
-                JOptionPane.showMessageDialog(null, "El coste de la materia es de " + costeMateriaPrima);
+                JOptionPane.showMessageDialog(null, "El coste de la"
+                        + " materia es de " + costeMateriaPrima);
 
                 if (costeMateriaPrima >= 0.1 && costeMateriaPrima <= 1) {
 
@@ -149,7 +167,8 @@ public class FabricaDulcesNavideños {
                     costeProduccionUnidad = COSTEMANOOBRAM2T2P1 + costeMateriaPrima;
 
                     //Calculo del precio de venta
-                    precioVenta = costeProduccionUnidad + (costeProduccionUnidad * 0.5);
+                    precioVenta = costeProduccionUnidad + 
+                            (costeProduccionUnidad * 0.5);
 
                     //Calculo beneficio
                     beneficio = precioVenta - costeProduccionUnidad;
@@ -158,15 +177,20 @@ public class FabricaDulcesNavideños {
                                         Un Polvoron (M2) nos cuesta : %.2f Centimos
                                         El precio de venta es de: %.2f Centimos
                                         El beneficio es de: %.2f Centimos
-                                     """.formatted(costeProduccionUnidad, precioVenta, beneficio);
+                                     """.formatted(costeProduccionUnidad, 
+                                             precioVenta, beneficio);
+                    
                     JOptionPane.showMessageDialog(null, resultado);
 
-                    JOptionPane.showMessageDialog(null, "Se va a calcular cuantos unidades a producir para que haya un beneficio de al menos 2500€");
+                    JOptionPane.showMessageDialog(null, "Se va a "
+                            + "alcular cuantos unidades a producir para que haya un beneficio de al menos 2500€");
                     objetivo = 2500 * 1 / beneficio;
-                    JOptionPane.showMessageDialog(null, " Necesitamos fabricar " + (int) Math.ceil(objetivo) + " Polvorones");
+                    JOptionPane.showMessageDialog(null, " Necesitamos"
+                            + " fabricar " + (int) Math.ceil(objetivo) + " Polvorones");
                     //Pase
                 } else {
-                    JOptionPane.showMessageDialog(null, " Error, precio no permitido");
+                    JOptionPane.showMessageDialog(null, " Error,"
+                            + " precio no permitido");
 
                 }
 
@@ -176,11 +200,13 @@ public class FabricaDulcesNavideños {
 
                 //Turron clasico---> T2
                 //coste producción = materia prima + mano de obra
-                String coste4String = JOptionPane.showInputDialog("Introduce el coste de la materia prima(entre 0.1€ y 1e)");
+                String coste4String = JOptionPane.showInputDialog("Introduce"
+                        + " el coste de la materia prima(entre 0.1€ y 1€)");
 
                 costeMateriaPrima = Double.parseDouble(coste4String);
 
-                JOptionPane.showMessageDialog(null, "El coste de la materia es de " + costeMateriaPrima);
+                JOptionPane.showMessageDialog(null, "El coste de la"
+                        + " materia es de " + costeMateriaPrima);
 
                 if (costeMateriaPrima >= 0.1 && costeMateriaPrima <= 1) {
 
@@ -188,25 +214,32 @@ public class FabricaDulcesNavideños {
                     costeProduccionUnidad = COSTEMANOOBRAM2T2P1 + costeMateriaPrima;
 
                     //Calculo del precio de venta
-                    precioVenta = costeProduccionUnidad + (costeProduccionUnidad * 0.65);
+                    precioVenta = costeProduccionUnidad + 
+                            (costeProduccionUnidad * 0.65);
 
                     //Calculo beneficio
                     beneficio = precioVenta - costeProduccionUnidad;
                     //salida de datos
                     String resultado = """
-                                        Un Turron de chocolate (T1) nos cuesta : %.2f Centimos
+                                        Un Turron clasico (T2) nos cuesta : %.2f Centimos
                                         El precio de venta es de: %.2f Centimos
                                         El beneficio es de: %.2f Centimos
                                      """.formatted(costeProduccionUnidad, precioVenta, beneficio);
                     JOptionPane.showMessageDialog(null, resultado);
-
-                    JOptionPane.showMessageDialog(null, "Se va a calcular cuantos unidades a producir para que haya un beneficio de al menos 2500€");
+                    
+                    JOptionPane.showMessageDialog(null, "Se va"
+                            + " a calcular cuantos unidades a producir para que haya un beneficio de al menos 2500€");
                     objetivo = 2500 * 1 / beneficio;
-                    //(int para declarar el double en int y el ceil para redondear hacia arriba)
-                    JOptionPane.showMessageDialog(null, " Necesitamos fabricar " + (int) Math.ceil(objetivo) + " Turrones clasicos ");
+                    
+                    //(int para declarar el double en int y el ceil
+                    //para redondear hacia arriba)
+                    JOptionPane.showMessageDialog(null, " Necesitamos"
+                            + "fabricar " + (int) Math.ceil(objetivo) + " Turrones clasicos ");
                     //Pase
+                    
                 } else {
-                    JOptionPane.showMessageDialog(null, " Error, precio no permitido");
+                    JOptionPane.showMessageDialog(null, " Error,"
+                            + " precio no permitido");
 
                 }
 
@@ -215,16 +248,20 @@ public class FabricaDulcesNavideños {
             case "5":
                 //Mazapanes---> P1
                 //coste producción = materia prima + mano de obra
-                String coste5String = JOptionPane.showInputDialog("Introduce el coste de la materia prima(entre 0.1 y 1)");
+                
+                String coste5String = JOptionPane.showInputDialog("Introduce"
+                        + " el coste de la materia prima(entre 0.1 y 1)");
 
                 costeMateriaPrima = Double.parseDouble(coste5String);
 
-                JOptionPane.showMessageDialog(null, "El coste de la materia es de " + costeMateriaPrima);
+                JOptionPane.showMessageDialog(null, "El coste de la"
+                        + " materia es de " + costeMateriaPrima);
 
                 if (costeMateriaPrima >= 0.1 && costeMateriaPrima <= 1) {
 
                     //Calculo coste unidad
-                    costeProduccionUnidad = COSTEMANOOBRAM2T2P1 + costeMateriaPrima;
+                    costeProduccionUnidad = COSTEMANOOBRAM2T2P1 
+                            + costeMateriaPrima;
 
                     //Calculo del precio de venta
                     precioVenta = costeProduccionUnidad + (costeProduccionUnidad * 0.5);
@@ -236,23 +273,29 @@ public class FabricaDulcesNavideños {
                                         Un Polvoron (M2) nos cuesta : %.2f Centimos
                                         El precio de venta es de: %.2f Centimos
                                         El beneficio es de: %.2f Centimos
-                                     """.formatted(costeProduccionUnidad, precioVenta, beneficio);
+                                     """.formatted(costeProduccionUnidad, 
+                                             precioVenta, beneficio);
                     JOptionPane.showMessageDialog(null, resultado);
 
-                    JOptionPane.showMessageDialog(null, "Se va a calcular cuantos unidades a producir para que haya un beneficio de al menos 2500€");
+                    JOptionPane.showMessageDialog(null, "Se va"
+                            + " a calcular cuantos unidades a producir para que"
+                            + " haya un beneficio de al menos 2500€");
                     objetivo = 2500 * 1 / beneficio;
                     //Int para declarar la variable se muestre en int y ceil para redondear hacia arriba
-                    JOptionPane.showMessageDialog(null, " Necesitamos fabricar " + (int) Math.ceil(objetivo) + " Mazapanes");
+                    JOptionPane.showMessageDialog(null, " Necesitamos"
+                            + " fabricar " + (int) Math.ceil(objetivo) + " Mazapanes");
                     //Pase
                 } else {
-                    JOptionPane.showMessageDialog(null, " Error, precio no permitido");
+                    JOptionPane.showMessageDialog(null, " Error"
+                            + ", precio no permitido");
 
                 }
 
                 break;
 
             default:
-                JOptionPane.showMessageDialog(null, " No existe este producto");
+                JOptionPane.showMessageDialog(null, " No "
+                        + "existe este producto");
         }
 
     }
