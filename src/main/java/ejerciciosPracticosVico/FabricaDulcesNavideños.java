@@ -85,14 +85,16 @@ public class FabricaDulcesNavideños {
                     JOptionPane.showMessageDialog(null, resultado);
                     //Calculo del objetivo de 2500 euros
                     JOptionPane.showMessageDialog(null, "Se va a calcular "
-                            + "cuantos unidades a producir para que haya un beneficio de al menos 2500€");
+                            + "cuantos unidades a producir para que haya un "
+                            + "beneficio de al menos 2500€");
                     objetivo = 2500 * 1 / beneficio;
                     //(int para declarar el double en int y el ceil para redondear hacia arriba)
                     JOptionPane.showMessageDialog(null, " Necesitamos "
                             + "fabricar " + (int) Math.ceil(objetivo) + " Mantecados ");
                     //Fin
                 } else {
-                    JOptionPane.showMessageDialog(null, " Error, precio no permitido");
+                    JOptionPane.showMessageDialog(null, " Error, "
+                            + "precio no permitido");
 
                 }
 
@@ -142,7 +144,8 @@ public class FabricaDulcesNavideños {
                             (int) Math.ceil(objetivo) + " Turrones ");
                     //Pase
                 } else {
-                    JOptionPane.showMessageDialog(null, " Error, precio no permitido");
+                    JOptionPane.showMessageDialog(null, " Error,"
+                            + " precio no permitido");
 
                 }
 
@@ -183,7 +186,8 @@ public class FabricaDulcesNavideños {
                     JOptionPane.showMessageDialog(null, resultado);
 
                     JOptionPane.showMessageDialog(null, "Se va a "
-                            + "alcular cuantos unidades a producir para que haya un beneficio de al menos 2500€");
+                            + "calcular cuantos unidades a producir para que haya un "
+                            + "beneficio de al menos 2500€ ");
                     objetivo = 2500 * 1 / beneficio;
                     JOptionPane.showMessageDialog(null, " Necesitamos"
                             + " fabricar " + (int) Math.ceil(objetivo) + " Polvorones");
@@ -228,7 +232,8 @@ public class FabricaDulcesNavideños {
                     JOptionPane.showMessageDialog(null, resultado);
                     
                     JOptionPane.showMessageDialog(null, "Se va"
-                            + " a calcular cuantos unidades a producir para que haya un beneficio de al menos 2500€");
+                            + " a calcular cuantos unidades a producir para que"
+                            + " haya un beneficio de al menos 2500€");
                     objetivo = 2500 * 1 / beneficio;
                     
                     //(int para declarar el double en int y el ceil
@@ -295,7 +300,7 @@ public class FabricaDulcesNavideños {
 
             default:
                 JOptionPane.showMessageDialog(null, " No "
-                        + "existe este producto");
+                        + "existe esteco codigo de producto producto");
         }
 
     }
