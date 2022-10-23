@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author pablo
+ * @author samue
  */
-public class Ej02 {
+public class Ej06 {
 
     /**
      * @param args the command line arguments
@@ -18,18 +18,18 @@ public class Ej02 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Scanner teclado=new Scanner(System.in);
+        
+         Scanner teclado=new Scanner(System.in);
         int n,x;
         System.out.print("Ingrese el valor final:");
         n=teclado.nextInt();
         x=1;
-        while (x<=n) {
-            System.out.print(x);
-            System.out.print(" - ");
-            x = x + 1; //Actualizacion
+        
+        for (int i = x; i < n; i++) {
+                
+              System.out.print(i);
+               System.out.print(" - ");
         }
-        // Igual que el primer ejercicio solo que en este ingresamos el numero 
-        //que queremos comparar 
         
         
         

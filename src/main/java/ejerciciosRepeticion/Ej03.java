@@ -17,19 +17,19 @@ public class Ej03 {
         // TODO code application logic here
         
         //declaracion variable
-        
-        final int REPETICIONES = 25;
-        int contador=5;
-         while(contador<=REPETICIONES){
-             System.out.println(contador);
-             contador *=2;
-         
-         }
-        
-        
-        
-        
-        
+       //Realizar un programa que imprima 25 términos de la serie 
+       //15 - 30 - 60 - 120, etc. No se introducen valores por teclado.
+      final int NUMERO_DE_REPETICIONES = 25;
+        int contador=15;
+        int iterador =0;
+       while(iterador<=NUMERO_DE_REPETICIONES){
+           contador*=2; 
+           System.out.println(contador);
+           iterador++; //actualizacion
+            
+        }
+       
+      
         
         
     }

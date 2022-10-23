@@ -8,33 +8,29 @@ import java.util.Scanner;
 
 /**
  *
- * @author pablo
+ * @author samue
  */
-public class Ej02 {
+public class Ej05 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        Scanner teclado=new Scanner(System.in);
-        int n,x;
+
+        //Implementa el programa del ejercicio 2 usando un do – while.
+        Scanner teclado = new Scanner(System.in);
+        int n, x;
         System.out.print("Ingrese el valor final:");
-        n=teclado.nextInt();
-        x=1;
-        while (x<=n) {
+        n = teclado.nextInt();
+        x = 1;
+        do {
+
             System.out.print(x);
             System.out.print(" - ");
-            x = x + 1; //Actualizacion
-        }
-        // Igual que el primer ejercicio solo que en este ingresamos el numero 
-        //que queremos comparar 
-        
-        
-        
-        
-        
+            x = x + 1;
+        } while (x <= n);
+
     }
-    
+
 }
