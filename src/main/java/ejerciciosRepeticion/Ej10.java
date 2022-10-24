@@ -15,9 +15,10 @@ public class Ej10 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //Implementa un programa Java que permita visualizar todas las letras minúsculas, desde la 'a' hasta la 'z', usando un for.
-
-        for (int letra = 'a'; letra < 'z'; letra++) {
+        //Implementa un programa Java que permita visualizar todas las letras 
+        //minúsculas, desde la 'a' hasta la 'z', usando un for.
+        //<= MENOR o IGUAL, para que llegue a lo que queramos
+        for (int letra = 'a'; letra <= 'z'; letra++) {
             System.out.println(" Letra " + (char) letra);
 
         }

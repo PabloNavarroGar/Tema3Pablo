@@ -29,11 +29,12 @@ public class Ej01 {
             
         }
        
-        //es un while, el cual tiene una variable que es 1, 
+        //es un while, el cual tiene una variable entera que es 1, 
         //se le da una condicion de que si
-        //"x" es menor o iugal a cien, se imprima del 1 al
+        //"x" es menor o igual a cien, se imprima del 1 al
         //100 de 1 en 1, separados por un guion
-        //y en orden ascenente, que es una actualizacion del bucle
+        //y en orden ascendente.Tiene una actualizacion del bucle para que no 
+        //sea Infinito
     }
     
 }

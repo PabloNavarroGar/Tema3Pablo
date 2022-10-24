@@ -15,7 +15,8 @@ public class Ej13 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        // Modifica el programa del ejercicio 11 para que se vea el código numérico (número entero) de cada una de las letras.
+        // Modifica el programa del ejercicio 11 para que se vea el código
+        // numérico (número entero) de cada una de las letras.
         
         char letra = 'A';
          

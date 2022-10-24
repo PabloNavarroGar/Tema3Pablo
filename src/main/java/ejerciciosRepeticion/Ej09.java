@@ -23,8 +23,9 @@ public class Ej09 {
             j++;
         }
         System.out.println(j);
-        // Dado i = 0 j j = 6, co un while: mientras i sea menor que 0, porque es 0 ya,
-        //sumale 0 y sumale j que en este caso se suma 0 y luego 6 por lo que el resultado es 6
+        // Dado i = 0 j j = 6, co un while: mientras i sea menor que 0,se le suma 0,
+        //no se suma porque no se cumple, j que en este caso se suma 0 por parte de i y luego 6 
+        // por 'j' por lo que el resultado es 6.
     }
 
 }

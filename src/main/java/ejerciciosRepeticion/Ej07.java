@@ -22,6 +22,8 @@ public class Ej07 {
         }
         System.out.println(j);
 
-    }
+    }   
+        //cuenta las iteraciones entre -13 y -10, hay 4 pasos pero como hay 1
+        //en j se le suma 1 mas con lo que es 5
 
 }

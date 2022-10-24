@@ -28,9 +28,10 @@ public class Ej04 {
           } while(numero > 1);
    	  }
 
-        // dado un numero entero 1, mientras el numero sea menor que 11, que va a ser hasta 10,
-        //dese el 1 al 10, y despues con el do while, va a ser desde el 10 al 1, como su condicion es
-        // que numero s mayor a 1 y como es 1 se quedara en 1.
+        // Dado un numero entero 1, mientras el numero sea menor que 11, que va a ser hasta 10,
+        //dese el 1 al 10, y despues con el do while,poniendo --numero, que sale 10 en vez de 11,
+        //va a ser desde el 10 al 1, como su condicion es
+        // que numero  mayor a 1 y como es 1 se quedara en 1.
         
         
         
